@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741685971934",
+    "firebase_url": "https://trackingtrial-164210.firebaseio.com",
+    "project_id": "trackingtrial-164210",
+    "storage_bucket": "trackingtrial-164210.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741685971934:android:abff24c543954824",
+        "android_client_info": {
+          "package_name": "com.example.janolaskar.easysoftchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741685971934-o8v2vlt4tfcvngniersjjosbe7bl6o3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.janolaskar.easysoftchat",
+            "certificate_hash": "63727eedad58f777c060656ba7baca0815db2e4b"
+          }
+        },
+        {
+          "client_id": "741685971934-i1u7snrcmr2sc03clqfl8c3nedujpfq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyL08frF6dYFnOzA88A-gj5_bGj4zBuG8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741685971934-i1u7snrcmr2sc03clqfl8c3nedujpfq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

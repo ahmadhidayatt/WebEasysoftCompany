@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">eS CU</string>
+    <string name="chat_name">Chat Name</string>
+    <string name="conversation_list">Chats</string>
+    <string name="friend_list">Friend</string>
+    <string name="group_list">Group</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
