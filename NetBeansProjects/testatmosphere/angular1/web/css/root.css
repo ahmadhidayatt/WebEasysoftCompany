@@ -1,0 +1,60 @@
+.bold {
+    font-size:10px;
+    font-style: oblique;
+}
+.italic{
+    font-size:15px;
+    font-style: italic;
+}
+.underline {
+    font-size:20px;
+    font-style: normal;
+}
+.oddRow{
+    background-color: blanchedalmond;
+}
+.evenRow{
+    background-color: royalblue;
+}
+.firsRow{
+    background-color: cyan;
+}
+table{
+    border-style: inherit;
+
+}
+tr,td
+{
+    border-style: solid;
+}
+input.ng-dirty.ng-valid span img {
+    
+    background: url(../image/Green_check.svg.png);
+    content:url(../image/Green_check.svg.png);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+}
+
+input.ng-dirty.ng-invalid span img{
+    background: url(../image/Red_wrong.png);
+    content:url(../image/Red_wrong.png);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.image_name{
+     background: url(../image/Red_wrong.png);
+    content:url(../image/Red_wrong.png);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.image_emails{
+     background: url(../image/Red_wrong.png);
+    content:url(../image/Red_wrong.png);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}

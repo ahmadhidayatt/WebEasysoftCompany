@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app ="root">
+    <head>
+        <title>Angular 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/root.css" type="text/css">        
+        <script type="text/javascript" src="js/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/root.js"></script>
+        <script type="text/javascript" src="js/multiplier.js"></script>
+        <script type="text/javascript" src="js/services.js"></script>
+        <script type="text/javascript" src="js/message.js"></script>
+    </head>
+    <body>
+        {{ "angularJS"}}
+        <hr>
+        <br/>
+        {{ 25 + 25}}
+        <br/>
+        <div ng-controller="index">{{message}} {{message2}}
+            <div>
+                Favorite word: <input type="text" ng-model="favoriteWord" />
+                - [{{favoriteWord}}]
+            </div>
+            <div>
+                Favorite color:
+                <input type="radio" name="fc" value="Red" ng-model="favoriteColor">Red</input>
+                <input type="radio" name="fc" value="Green" ng-model="favoriteColor" >Green</input>
+                <input type="radio" name="fc" value="Yellow" ng-model="favoriteColor">Yellow</input>
+                <input type="radio" name="fc" value="Blue" ng-model="favoriteColor">Blue</input>
+                - [{{favoriteColor}}]
+            </div>
+            <div>
+                Favorite shape:
+                <select  ng-model="favoriteShape">
+                    <option value="Circle">Circle</option>
+                    <option value="Triangle">Triangle</option>
+                    <option value="Square">Square</option>
+                </select>
+                - [{{favoriteShape}}]
+            </div>
+            <br/>
+            <input type="text" ng-model="value" />
+            <span ng-class="{bold: isBold(), italic: isItalic(), underline: isUnderlined()}">
+                Example Text style
+            </span>
+            <br/>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Name</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="product in products"  ng-class="{oddRow: $odd}"> 
+                        <td>{{product.id}}</td>
+                        <td>{{product.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+            <div><input type="checkbox" ng-model="isFirstElementVisible" /> Is first element visible</div>
+            <div><input type="checkbox" ng-model="isSecondElementVisible" /> Is second element visible</div>
+            <div ng-show="isFirstElementVisible">First Element</div>
+            <div ng-if="isSecondElementVisible">Second Element</div>
+            <br/>
+            {{message3}}
+            <br/>
+            {{product}}
+            <br/>
+            {{product2}}
+            <br/>
+            {{message4}}
+            <input type="text" ng-model="factor_watch" /> {{product3}}
+            <br/>
+            <p>Value: <input type="text" ng-model="values" /></p>
+            <p>{{values| round:1 | dollars}}</p>
+            <br/>
+            <p>Name: <input type="text" ng-model="name" required /><span> <img class="image_name" src="image/Green_check.svg.png"/></span></p>
+            <p>Email: <input type="email" ng-model="email" /><span> <img class="image_emails" src="image/Red_wrong.png"/></span></p>
+            <br/>
+<!--            <button ng-click="getUser()">Get User</button>
+            Name: <input ng-model="user.name" />
+            Email: <input ng-model="user.email" />
+            <button ng-click="postUser()">Post User</button>-->
+        </div>
+    </body>
+</html>
